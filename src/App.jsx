@@ -1,9 +1,12 @@
 import "./App.css";
+import { Footer, Navbar } from "./component";
 
 function App() {
   return (
     <div>
-      iRead
+      <Navbar/>
+      Body
+      <Footer/>
     </div>
   );
 }
