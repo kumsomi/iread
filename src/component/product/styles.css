@@ -1,0 +1,10 @@
+.grid-row{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(220px, 1fr) );
+}
+.product-img{
+    width: 100%;
+}
+.product-card{
+    padding:10px;
+}
