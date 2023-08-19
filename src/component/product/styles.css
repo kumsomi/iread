@@ -7,24 +7,50 @@
 body{
     background-color: #fcfcfd;
 }
+.card-header{
+    max-width: 25rem;
+    max-height:25rem;
+    position: relative;
+}
 .product-img{
     width: 100%;
+    height: 100%;
     grid-row: 1/5;
     border-radius: inherit;
+}
+.product-rating{
+    box-shadow: 0px 0px 5px 2px rgb(0,0,0,0.1);
+    padding: 3px 10px;
+    width: fit-content;
+    position: absolute;
+    background-color: white;
+    color: #232f3e;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
 }
 .product-title{
     font-weight: bold;
     font-size: 20px;
 }
 .product-price-tag{
-    display: flex;
-    justify-content: space-between;
+    font-size: 0.8rem;
+    /* display: flex; */
+    /* justify-content: space-between; */
 }
 .product-discount-price{
     font-weight: bold;
+    font-size: 1.5rem;
 }
 .product-original-price{
     text-decoration: line-through;
+}
+.product-discount{
+    background-color: rgb(255 0 0 / 40%);
+    height: fit-content;
+    padding: 0px 10px;
+    margin: 0px 10px;
 }
 .product-card{
     padding:20px;
@@ -32,11 +58,9 @@ body{
     gap: 10px;
     background-color: rgb(248, 223, 248);
     background-color: white;
-border-radius: 0.2rem;
-position: relative;
+    border-radius: 0.2rem;
+    position: relative;
     box-shadow: 0 0 5px 2px rgba(0,0,0,0.1);
-
-
 }
 .product-like-btn{
    color: #ffde59;
@@ -47,8 +71,7 @@ position: relative;
 
 }
 .product-like-btn:hover{
-    background: #232f3e;
-    /* background: #b4cfef; */
+    background: rgb(35, 47, 62,0.9);
     cursor:pointer;
     box-shadow: 0px 0px 0px 0px;
 }
@@ -59,8 +82,6 @@ position: relative;
     background-color: white;
     padding: 5px;
     box-shadow: 0 0 5px 2px rgba(0,0,0,0.1);
-    /* color: #ffde59; */
-    background-color: #232f3e;
     background-color: #b4cfef;
 }
 .add-cart-btn{
@@ -84,10 +105,7 @@ position: relative;
     padding: 2px 10px;
     border-radius: 0.2rem;
     color: #ffde59;
-    background-color: #232f3e;
-}
-.product-rating{
-    box-shadow: 0px 0px 5px 2px rgb(0,0,0,0.1);
-    padding: 3px 10px;
-    width: fit-content;
+    /* background-color: rgb(35, 47, 62); */
+    background-color: rgb(35, 47, 62, 0.9);
+
 }

@@ -10,15 +10,22 @@ const ProductCard = ({ title, author, _id, categoryName, price }) => {
   const rating = 4.5;
   return (
     <div className="product-card" key={_id}>
-      <img className="product-img" src={pic} alt="olympics" />
+      <div className="card-header">
+        <img className="product-img" src={pic} alt="olympics" />
+        <div className="product-rating">
+          {rating} <AiFillStar />
+        </div>
+      </div>
+      {/* <div className="card-body">
 
+      </div> */}
       <div className="product-title">{title}</div>
       <div className="product-author">{author}</div>
       <div className="product-price-tag">
         <span className="product-discount-price">₹{price}</span>
+        <span className="product-discount">SAVE {discount}%</span>
         <span className="product-original-price">₹{originalPrice}</span>
       </div>
-      <span className="product-discount">{discount}%</span>
 
       <div>
         <span className="product-category">{categoryName}</span>
@@ -29,9 +36,7 @@ const ProductCard = ({ title, author, _id, categoryName, price }) => {
           <AiOutlineHeart />
         </span>
       </div>
-      <div className="product-rating">
-        {rating} <AiFillStar />
-      </div>
+
       <button className="add-cart-btn">Add to cart</button>
     </div>
   );
