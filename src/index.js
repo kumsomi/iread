@@ -1,18 +1,19 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
 import App from "./App";
+import './index.css';
+import React from "react";
 import { makeServer } from "./server";
 import { BrowserRouter } from "react-router-dom";
-
-// Call make Server
+import { ProductProvider } from "./context/productContext";
+import { createRoot } from "react-dom/client";
 makeServer();
 
-ReactDOM.render(
+const root = createRoot(document.getElementById("root"));
+root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <ProductProvider>
+        <App />
+      </ProductProvider>
     </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById("root")
+  </React.StrictMode>
 );
