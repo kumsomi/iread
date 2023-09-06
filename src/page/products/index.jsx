@@ -11,8 +11,7 @@ export const Products = () => {
   } = useProduct();
   return (
     <div>
-      ProductListing
-      <h1>Products</h1>
+      <h1>All Products</h1>
       {loading ? (
         <h1>Loading...</h1>
       ) : error ? (

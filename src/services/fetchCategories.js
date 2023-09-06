@@ -5,8 +5,7 @@ const fetchCategories = async (productDispatch) => {
     const {
       data: { categories },
     } = await axios.get("/api/categories");
-    console.log(categories);
-
+    
     productDispatch({
       type: "INIT_CATEGORIES_SUCCESS",
       payload: {

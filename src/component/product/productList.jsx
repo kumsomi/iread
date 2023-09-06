@@ -7,6 +7,7 @@ const productListing = ({ products }) => {
     <div className="grid-row">
       {products.map((product) => (
         <ProductCard
+          key={product._id}
           title={product.title}
           author={product.author}
           _id={product._id}
